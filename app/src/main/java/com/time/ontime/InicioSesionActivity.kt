@@ -5,6 +5,7 @@ import android.os.Bundle
 
 class InicioSesionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        supportActionBar?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio_sesion)
     }
