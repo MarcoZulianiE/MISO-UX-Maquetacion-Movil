@@ -69,7 +69,7 @@
         android:fontFamily="@font/open_sans"
         android:text="¿Has olvidado tu contraseña?"
         android:textColor="#991EFBA0"
-        android:textIsSelectable="true"
+        android:textIsSelectable="false"
         android:textSize="13sp"
         app:layout_constraintStart_toStartOf="@+id/contraseniaLayout"
         app:layout_constraintTop_toBottomOf="@+id/contraseniaLayout" />
@@ -92,7 +92,7 @@
             android:background="@drawable/textfield"
             android:fontFamily="@font/open_sans"
             android:hint="Escriba su correo electrónico"
-            android:inputType="textPassword"
+            android:inputType="text|textEmailAddress"
             android:textColor="@color/gray"
             android:textColorHint="@color/gray"
             android:textSize="15sp" />

@@ -4,6 +4,196 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="254dp"
+        android:layout_height="193dp"
+        android:src="@drawable/ontimelogo"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/spring_green"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="REGISTRARSE"
+        android:textColor="@color/prussian_blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Regresar"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Regresar"
+        android:textColor="@color/spring_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/prussian_blue"
+        app:strokeWidth="3sp" />
+
+    <RelativeLayout
+        android:id="@+id/nombreLayout"
+        android:layout_width="237dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/contraseniaLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/editTextTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textfield"
+            android:fontFamily="@font/open_sans"
+            android:hint="Escriba su nombre"
+            android:inputType="text|textPersonName"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/labelnombre"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="154dp"
+            android:background="@color/yinmn_blue"
+            android:fontFamily="@font/open_sans"
+            android:text="Nombre"
+            android:textAlignment="center"
+            android:textColor="@color/tiffany_blue"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/correoLayout"
+        android:layout_width="237dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/contraseniaLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/editTextTextCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textfield"
+            android:fontFamily="@font/open_sans"
+            android:hint="Escriba su correo electrónico"
+            android:inputType="text|textEmailAddress"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/labelcorreo"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="85dp"
+            android:background="@color/yinmn_blue"
+            android:fontFamily="@font/open_sans"
+            android:text=" Correo Electrónico "
+            android:textAlignment="center"
+            android:textColor="@color/tiffany_blue"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <com.time.ontime.GradientTextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="REGÍSTRATE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <RelativeLayout
+        android:id="@+id/contraseniaLayout"
+        android:layout_width="237dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textfield"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Escriba su contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/labelcontrasenia"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="134dp"
+            android:background="@color/yinmn_blue"
+            android:fontFamily="@font/open_sans"
+            android:text=" Contraseña "
+            android:textAlignment="center"
+            android:textColor="@color/tiffany_blue"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Al registrarte aceptas nuestra política de tratamiento de datos."
+        android:textAlignment="center"
+        android:textColor="@color/tiffany_blue"
+        android:textColorHighlight="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/contraseniaLayout"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/contraseniaLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
