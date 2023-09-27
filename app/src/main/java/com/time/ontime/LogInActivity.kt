@@ -3,10 +3,10 @@ package com.time.ontime
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class InicioSesionActivity : AppCompatActivity() {
+class LogInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         supportActionBar?.hide()
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inicio_sesion)
+        setContentView(R.layout.activity_log_in)
     }
 }
