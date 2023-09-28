@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">On Time</string>
+
+    <string-array name="missions_filter">
+        <item>Misiones Activas</item>
+        <item>Misiones Diarias</item>
+        <item>Misiones Semanales</item>
+        <item>Misiones Completadas</item>
+    </string-array>
 </resources>
