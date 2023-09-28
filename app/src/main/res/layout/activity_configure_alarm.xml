@@ -4,6 +4,427 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".configureAlarmActivity">
+
+    <RelativeLayout
+        android:id="@+id/categoriaLayout"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoria">
+
+        <EditText
+            android:id="@+id/editTextTextCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/textfield"
+            android:fontFamily="@font/open_sans"
+            android:hint="Escriba el nombre de la categoría"
+            android:inputType="text|textEmailAddress"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/labelcategoria"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="148dp"
+            android:background="@color/yinmn_blue"
+            android:fontFamily="@font/open_sans"
+            android:text="Nombre categoría"
+            android:textAlignment="center"
+            android:textColor="@color/tiffany_blue"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <com.time.ontime.GradientTextView
+        android:id="@+id/titulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Configurar Alarma"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/correoLayout"
+        android:layout_width="291dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <EditText
+            android:id="@+id/editTextTextCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textfield"
+            android:fontFamily="@font/open_sans"
+            android:hint="Escriba el nombre de la alarma"
+            android:inputType="text|textEmailAddress"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/labelcorreo"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="161dp"
+            android:background="@color/yinmn_blue"
+            android:fontFamily="@font/open_sans"
+            android:text="Nombre Alarma"
+            android:textAlignment="center"
+            android:textColor="@color/tiffany_blue"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="251dp"
+        android:layout_height="118dp"
+        android:timePickerMode="spinner"
+        android:timePickerStyle="@style/CustomTimePickerStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correoLayout" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/correoLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo2"
+        app:srcCompat="@drawable/divisionline" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Repetición"
+        android:textColor="@color/spring_green"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Categoría"
+        android:textColor="@color/spring_green"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeticion" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Desafío para despertarse"
+        android:textColor="@color/spring_green"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/despertarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correoLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="351dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/Cancelar"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/spring_green"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="CANCELAR"
+            android:textColor="@color/prussian_blue"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/Guardar"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/spring_green"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="GUARDAR"
+            android:textColor="@color/prussian_blue"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="252dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <Button
+            android:id="@+id/monday"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/yinmn_blue"
+            android:padding="0dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:text="L"
+            android:textColor="@color/spring_green"
+            android:textSize="20dp"
+            app:cornerRadius="100dp"
+            app:strokeColor="@color/picton_blue"
+            app:strokeWidth="2dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="322dp" />
+
+        <Button
+            android:id="@+id/tuesday"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/yinmn_blue"
+            android:padding="0dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:text="M"
+            android:textColor="@color/spring_green"
+            android:textSize="20dp"
+            app:cornerRadius="100dp"
+            app:strokeColor="@color/picton_blue"
+            app:strokeWidth="2dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="322dp" />
+
+        <Button
+            android:id="@+id/wednesday"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/yinmn_blue"
+            android:padding="0dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:text="X"
+            android:textColor="@color/spring_green"
+            android:textSize="20dp"
+            app:cornerRadius="100dp"
+            app:strokeColor="@color/picton_blue"
+            app:strokeWidth="2dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="322dp" />
+
+        <Button
+            android:id="@+id/thursday"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/yinmn_blue"
+            android:padding="0dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:text="J"
+            android:textColor="@color/spring_green"
+            android:textSize="20dp"
+            app:cornerRadius="100dp"
+            app:strokeColor="@color/picton_blue"
+            app:strokeWidth="2dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="322dp" />
+
+        <Button
+            android:id="@+id/friday"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/yinmn_blue"
+            android:padding="0dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:text="V"
+            android:textColor="@color/spring_green"
+            android:textSize="20dp"
+            app:cornerRadius="100dp"
+            app:strokeColor="@color/picton_blue"
+            app:strokeWidth="2dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="322dp" />
+
+        <Button
+            android:id="@+id/saturday"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/yinmn_blue"
+            android:padding="0dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:text="S"
+            android:textColor="@color/spring_green"
+            android:textSize="20dp"
+            app:cornerRadius="100dp"
+            app:strokeColor="@color/picton_blue"
+            app:strokeWidth="2dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="322dp" />
+
+        <Button
+            android:id="@+id/sunday"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/yinmn_blue"
+            android:padding="0dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:text="D"
+            android:textColor="@color/spring_green"
+            android:textSize="20dp"
+            app:cornerRadius="100dp"
+            app:strokeColor="@color/picton_blue"
+            app:strokeWidth="2dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="322dp" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/repeticion"
+        android:layout_width="148dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/gray"
+        android:backgroundTint="@color/tiffany_blue"
+        android:entries="@array/repeticion"
+        android:foregroundTint="#050505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <Spinner
+        android:id="@+id/categoria"
+        android:layout_width="148dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/tiffany_blue"
+        android:backgroundTint="@color/tiffany_blue"
+        android:entries="@array/categoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Spinner
+        android:id="@+id/despertarse"
+        android:layout_width="148dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/tiffany_blue"
+        android:backgroundTint="@color/tiffany_blue"
+        android:entries="@array/despertarse"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

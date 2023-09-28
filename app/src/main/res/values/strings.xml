@@ -7,4 +7,24 @@
         <item>Misiones Semanales</item>
         <item>Misiones Completadas</item>
     </string-array>
+
+    <string-array name="repeticion">
+        <item>Nunca</item>
+        <item>Cada semana</item>
+        <item>Cada mes</item>
+        <item>Cada año</item>
+    </string-array>
+
+    <string-array name="categoria">
+        <item>Nueva</item>
+        <item>Ejercicio</item>
+        <item>Universidad</item>
+        <item>Entretenimiento</item>
+    </string-array>
+
+    <string-array name="despertarse">
+        <item>Ninguno</item>
+        <item>Matemáticos</item>
+        <item>10 pasos</item>
+    </string-array>
 </resources>
