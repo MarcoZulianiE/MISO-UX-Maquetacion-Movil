@@ -8,6 +8,7 @@ import android.widget.ImageButton
 
 class MyAlarmsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        supportActionBar?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_alarms)
 
