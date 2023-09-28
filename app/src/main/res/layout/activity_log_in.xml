@@ -11,24 +11,27 @@
         android:id="@+id/imageView"
         android:layout_width="254dp"
         android:layout_height="193dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
         android:src="@drawable/ontimelogo"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/titulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.time.ontime.GradientTextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/open_sans_extrabold"
         android:text="INICIA SESIÓN"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/correoLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -36,7 +39,7 @@
     <Button
         android:id="@+id/button"
         android:layout_width="240dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="40dp"
         android:backgroundTint="@color/spring_green"
         android:fontFamily="@font/open_sans_extrabold"
@@ -50,7 +53,7 @@
     <Button
         android:id="@+id/Regresar"
         android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:layout_marginBottom="80dp"
         android:backgroundTint="#00FFFFFF"
         android:fontFamily="@font/open_sans_extrabold"
@@ -78,10 +81,12 @@
         android:id="@+id/correoLayout"
         android:layout_width="237dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/contraseniaLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo">
 
         <EditText
             android:id="@+id/editTextTextCorreo"
@@ -117,10 +122,12 @@
         android:id="@+id/contraseniaLayout"
         android:layout_width="237dp"
         android:layout_height="51dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="79dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correoLayout">
 
         <EditText
             android:id="@+id/editTextTextPassword"

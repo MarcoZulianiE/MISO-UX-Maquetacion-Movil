@@ -11,20 +11,22 @@
         android:id="@+id/imageView"
         android:layout_width="254dp"
         android:layout_height="193dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
         android:src="@drawable/ontimelogo"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/titulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="240dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="40dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/spring_green"
         android:fontFamily="@font/open_sans_extrabold"
         android:text="REGISTRARSE"
@@ -32,13 +34,15 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/Regresar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/Regresar"
         android:layout_width="160dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="80dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="70dp"
         android:backgroundTint="#00FFFFFF"
         android:fontFamily="@font/open_sans_extrabold"
         android:text="Regresar"
@@ -46,6 +50,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
         app:strokeColor="@color/prussian_blue"
         app:strokeWidth="3sp" />
 
@@ -53,10 +58,12 @@
         android:id="@+id/nombreLayout"
         android:layout_width="237dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="80dp"
-        app:layout_constraintBottom_toTopOf="@+id/contraseniaLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/correoLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo">
 
         <EditText
             android:id="@+id/editTextTextNombre"
@@ -92,10 +99,12 @@
         android:id="@+id/correoLayout"
         android:layout_width="237dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/contraseniaLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreLayout">
 
         <EditText
             android:id="@+id/editTextTextCorreo"
@@ -131,11 +140,13 @@
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/open_sans_extrabold"
         android:text="REGÍSTRATE"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/nombreLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,10 +156,12 @@
         android:id="@+id/contraseniaLayout"
         android:layout_width="237dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correoLayout">
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -186,14 +199,20 @@
         android:id="@+id/textView"
         android:layout_width="278dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
         android:text="Al registrarte aceptas nuestra política de tratamiento de datos."
         android:textAlignment="center"
         android:textColor="@color/tiffany_blue"
         android:textColorHighlight="@color/gray"
+        android:shadowColor="#000000"
+        android:shadowDy="5"
+        android:shadowRadius="4"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="@+id/contraseniaLayout"
         app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="@+id/contraseniaLayout" />
+        app:layout_constraintStart_toStartOf="@+id/contraseniaLayout"
+        app:layout_constraintTop_toBottomOf="@+id/contraseniaLayout" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
