@@ -1,5 +1,6 @@
 package com.time.ontime
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
@@ -42,6 +43,31 @@ class configureAlarmActivity : AppCompatActivity() {
         btnFriday.setOnClickListener(onClickListener)
         btnSaturday.setOnClickListener(onClickListener)
         btnSunday.setOnClickListener(onClickListener)
+
+
+        // Obtener una referencia al botón desde tu diseño XML
+        val terminateBtn = findViewById<Button>(R.id.Cancelar)
+
+        // Configurar un OnClickListener para el botón
+        terminateBtn.setOnClickListener(View.OnClickListener {
+            // Crear un Intent para ir a la otra Actividad
+            val intent = Intent(this, MyAlarmsActivity::class.java)
+
+            // Iniciar la otra Actividad
+            startActivity(intent)
+        })
+
+        // Obtener una referencia al botón desde tu diseño XML
+        val saveBtn = findViewById<Button>(R.id.Guardar)
+
+        // Configurar un OnClickListener para el botón
+        saveBtn.setOnClickListener(View.OnClickListener {
+            // Crear un Intent para ir a la otra Actividad
+            val intent = Intent(this, MyAlarmsActivity::class.java)
+
+            // Iniciar la otra Actividad
+            startActivity(intent)
+        })
     }
 
     private fun isColor1(btn: Button): Boolean {

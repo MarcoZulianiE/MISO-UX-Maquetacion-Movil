@@ -13,25 +13,22 @@
         android:theme="@style/Theme.OnTime"
         tools:targetApi="31">
         <activity
-            android:name=".HomeActivity"
-            android:exported="true" />
-        <activity
-            android:name=".configureAlarmActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MisionsActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MyAlarmsActivity"
-            android:exported="true" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".LogInActivity"
             android:exported="false" />
         <activity
-            android:name=".LogInActivity"
+            android:name=".configureAlarmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MisionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyAlarmsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
