@@ -1,33 +1,53 @@
 # MISO-UX-Maquetacion-Movil
-Maquetación móvil desarrollada como parte del proyecto para el curso "UX Mejoramiento de la Experiencia de Usuario" de la Maestría en Ingeniería de Software de la Universidad de los Andes.
+Mobile layout developed as part of the project for the course "UX mejoramiento de la experiencia de usuario" of the Master in Software Engineering (MISO) of the Universidad de los Andes.
 
-## Miembros del equipo
+## Project
+
+![appLogo](https://github.com/poloivaz/MISO-UX-Maquetacion-Web/assets/78174427/3b4097c5-3b05-4d58-89df-b84a0682d141)
+
+## Team Members
 
 - Marco Zuliani
 - Daniel Bernal
 
-## Proceso para la ejecución de la aplicación
+## UX documents
+
+- [User Persona](https://drive.google.com/file/d/1XL0c3xiWW6zFxjsBTZjgRNm-UqACKoE5/view?usp=sharing)
+
+- [Journey Map](https://drive.google.com/file/d/1b9rHXNwu72LfCFByAU9GsZZbhCRsiVEe/view?usp=sharing)
+
+- [UX Research Findings](https://drive.google.com/file/d/1OgFGGYk2l0FwFBPD_9wNbRhNCTv-2QMT/view?usp=sharing)
+  
+- [MVP](https://drive.google.com/file/d/1IeB0Y7SFtSIttt5tYpJNmZNU5k59pGtY/view?usp=sharing)
+
+- [Paper Prototype Testing](https://youtu.be/TqFEu0VZ8TM)
+
+- [Wireframes](https://www.figma.com/file/dl3rIzaKmIqU0XchHaXnRB/Wireframes-Movil?type=design&node-id=0%3A1&mode=design&t=jul9Nf53NvoAzHM4-1)
+
+- [Mockups](https://www.figma.com/file/lak17rafM3mcV7NeVQrJWm/Mockup-Movil?type=design&node-id=0%3A1&mode=design&t=wYw8p5JLZBPJKbkw-1)
+
+## App execution process
 
 ### APK
 
-1. Descarga el archivo .apk en tu celular
-2. Ejecutar el archivo
-3. Se indicará que la aplicación no es segura según la verificación de Play Protect. Se acepta dicho aviso y se cotinua con el proceso de instalación.
-4. Si la aplicación se instaló sin problemas puedes omitir los siguientes pasos. En caso contrario, se deberá desactivar la verificaciíon de Play Protectpara proceder con la instalación.
-5. Desactivar Análisis de aplicaciones de Play Protect
-  5.1. Abrir la Play Store
-  5.2. Selecciona tu imagen de perfil que se encuentra en la esquina superior derecha.
-  5.3. Selecciona la opción "Play Protect" entre las opciones que se despliegan.
-  5.4. En la esquina superior selecciona el icono de la tuerca de ajustes.
-  5.5. Desactiva el escaneo de aplicaciones.
-6. Ejecuta nuevamente el apk y sigue los pasos de instalación.
-7. Activa nuevamente el escaner de aplicaciones de Play Protect.
-8. Abre la aplicación.
+1. Download the [.apk file](https://drive.google.com/file/d/15_HmmPAyMkGoG-hq7qHsuX4r1iJ2bHIN/view?usp=sharing) to your cell phone. 
+2. Run the file
+3. It will indicate that the application is not safe according to the verification of Play Protect. Accept this warning and continue with the installation process.
+4. If the application was installed without problems you can skip the following steps. Otherwise, the Play Protect check must be deactivated to proceed with the installation.
+5. Disable Play Protect application scanning
+  5.1. Open the Play Store
+  5.2. Select your profile picture located in the top right corner.
+  5.3. Select the "Play Protect" option from the options that are displayed.
+  5.4. In the top corner select the settings icon.
+  5.5. Disable application scanning.
+6. Run the apk again and follow the installation steps.
+7. Enable Play Protect application scanner again.
+8. Open the application.
 
-### Emulador en Android Studio
+### Android Studio Emulator
 
-1. Clonar el repositorio en tu máquina local.
-2. Abrir el proyecto con Android Studio.
-3. Crear un emulador de  un dispositivo de dimensiones 360 x 640.
-4. En la barra de herramientas superior selecciona la opción de ejecutar (flecha de color verde).
-5. Espera a que cargue la aplicación.
+1. Clone the repository on your local machine.
+2. Open the project with Android Studio.
+3. Create an emulator of a device with dimensions 360 x 640.
+4. In the upper toolbar select the run option (green arrow).
+5. Wait for the application to load.
