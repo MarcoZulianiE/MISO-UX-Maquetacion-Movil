@@ -35,14 +35,15 @@ Mobile layout developed as part of the project for the course "UX mejoramiento d
 3. It will indicate that the application is not safe according to the verification of Play Protect. Accept this warning and continue with the installation process.
 4. If the application was installed without problems you can skip the following steps. Otherwise, the Play Protect check must be deactivated to proceed with the installation.
 5. Disable Play Protect application scanning
-  5.1. Open the Play Store
-  5.2. Select your profile picture located in the top right corner.
-  5.3. Select the "Play Protect" option from the options that are displayed.
-  5.4. In the top corner select the settings icon.
-  5.5. Disable application scanning.
-6. Run the apk again and follow the installation steps.
-7. Enable Play Protect application scanner again.
-8. Open the application.
+   
+       5.1. Open the Play Store
+       5.2. Select your profile picture located in the top right corner.
+       5.3. Select the "Play Protect" option from the options that are displayed.
+       5.4. In the top corner select the settings icon.
+       5.5. Disable application scanning.
+7. Run the apk again and follow the installation steps.
+8. Enable Play Protect application scanner again.
+9. Open the application.
 
 ### Android Studio Emulator
 
